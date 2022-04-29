@@ -29,6 +29,27 @@ body{
     
 }
 
+nav{
+    position: absolute;
+    right: 1%;
+    top: 3%;
+}
+
+ 
+
+ nav li{
+     display: inline;
+     margin: 3px;
+     
+ }
+
+ nav a{
+     text-decoration: none;
+     color: black;
+     font-weight: bold;
+     font-size: 22px;
+ }
+
 
 
 p{
@@ -72,4 +93,11 @@ em strong{
      
     width: 50%;
      
+}
+
+nav a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(221, 149, 23);
+
 }
