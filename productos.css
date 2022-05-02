@@ -313,3 +313,27 @@ td,th{
  img~p = elige la etiqueta y todos los demas
 
  .clase:not(#id) = cambia a todas las etiquetas menos al id que eligemos */
+
+ /* media query */
+
+ @media screen and (max-width:480px) {
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+
+    .box1, .principal, .mapa-contenido, .box-list, .video{
+        width: auto;
+    } 
+
+    .lista-diferenciales, .img2{
+        width: 100%; 
+    }
+
+    
+ }
