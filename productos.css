@@ -196,10 +196,11 @@ td,th{
     font-size: 2em;  /*em multiplica el tamano original de la fuente que es 16px */
     margin: 0 0 1em ;
      clear: left; /*para que el float no afecte */
+     color: rgba(230,8,8,50%);  /*le da color y opacidad al texto */
 }
 
 .utensilios{
-    width: 10%;
+    width: calc(12% - (11px))  ; /*se usa para calcular el tamano de una imagen*/
     float: left;  /*se usa para que los elementos se ponga alrededor de el */
     margin: 0 20px 2px 0; 
 }
@@ -261,7 +262,15 @@ td,th{
 
 .img2{
     width: 60%;
+    cursor: pointer;
+    box-shadow: 10px 10px 25px 15px  black;  /*se usa para calcular el lugar,el degradado y la expansion de la sombra y se usa inset para usar la sombra desde dentro empieza desde 0 0 */
+  
+}
+
+.img2:hover{
      
+    opacity: 60%;
+    transition: 400ms;
 }
 
 .lista-diferenciales{
@@ -293,3 +302,14 @@ td,th{
  .title:after{
      content: "]";
  }
+
+
+ /* selectores avanzados
+
+ main>p = elige al padre luego al hijo
+
+ img+p = elige una etiqueta y la otra que le sigue
+
+ img~p = elige la etiqueta y todos los demas
+
+ .clase:not(#id) = cambia a todas las etiquetas menos al id que eligemos */
